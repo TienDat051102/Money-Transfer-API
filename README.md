@@ -1,11 +1,10 @@
-
 # Money Transfer API
 
 Đây là API RESTful chuyển tiền được xây dựng bằng **LoopBack 4**.
 
 ---
 
-## Tính năng 
+## Tính năng
 
 - Chuyển tiền từ tài khoản này sang tài khoản khác
 - kiểm tra điều kiện trong việc giao dịch
@@ -38,7 +37,7 @@ src/
 ## Cài đặt
 
 ```bash
-git clone <>
+git clone <https://github.com/TienDat051102/Money-Transfer-API.git>
 cd money-transfer-api
 npm install
 ```
@@ -57,7 +56,7 @@ Nếu muốn thêm dữ liệu trực tiếp có thể điều chỉnh file `mig
 
 ---
 
-## ✅ API 
+## ✅ API
 
 ### POST `/transfer`
 
@@ -71,17 +70,17 @@ Nếu muốn thêm dữ liệu trực tiếp có thể điều chỉnh file `mig
 }
 ```
 
-#### Success Response
+#### thành công
 
 ```json
 "Success"
 ```
 
-#### Error Response
+#### Lỗi
 
 ```json
 {
-  "error": "Insufficient balance"
+  "error": "..."
 }
 ```
 
@@ -91,5 +90,5 @@ Nếu muốn thêm dữ liệu trực tiếp có thể điều chỉnh file `mig
 
 - Tránh sử dụng `include` khi cập nhật mô hình. Nó có thể thêm các thuộc tính không bền vững vào phiên bản mô hình.
 - Chỉ sử dụng `findById` với `include` để đọc dữ liệu, không phải để cập nhật
----
 
+---
